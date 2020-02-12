@@ -4,7 +4,7 @@
     "description": "For Scratch Teachers and Book Creatores, Downloading the Scratch Block Code to SVG file.",
     "version": "3.0.2020.10211",
     "permissions": [
-        "https://scratch.mit.edu/projects/*", "https://champierre.github.io/scratch3/"
+        "activeTab"
     ],
     "background": {
         "scripts": ["background.js"],
