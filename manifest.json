@@ -1,10 +1,10 @@
 ﻿{
     "name": "#S - Hash Scratch",
     "short_name": "#S",
-    "description": "For Scratch Teachers and Bookmakers. Downloading the Scratch Block Code to SVG file.",
-    "version": "0.1.2020.10211",
+    "description": "For Scratch Teachers and Book Creatores, Downloading the Scratch Block Code to SVG file.",
+    "version": "3.0.2020.10211",
     "permissions": [
-        "activeTab"
+        "https://scratch.mit.edu/projects/*", "https://champierre.github.io/scratch3/"
     ],
     "background": {
         "scripts": ["background.js"],

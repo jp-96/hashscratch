@@ -25,6 +25,7 @@ async function downloadBlockCodeAsSVG(sendMessage) {
       target.setAttribute(attrs[i].name, attrs[i].value);
     }
   }
+  
   // Block Code SVG
   const ws = document.querySelector('svg.blocklySvg g.blocklyWorkspace')
   if (!ws){
@@ -32,13 +33,10 @@ async function downloadBlockCodeAsSVG(sendMessage) {
     return;
   }
   const svg = ws.parentNode.cloneNode(true);
-  //svg.setAttribute('width',"210mm");
-  //svg.setAttribute('height',"297mm");
-  //svg.setAttribute('viewBox',"0 0 210 297");
   // transform
   let svgchild = svg.querySelector('g.blocklyBlockCanvas');
-  let xArr = []
-  let yArr = []
+  let xArr = [];
+  let yArr = [];
   svgchild.childNodes.forEach(g => {
       try {
         let xy = g.getAttribute('transform').match(/translate\((.*?),(.*?)\)/);
@@ -47,7 +45,7 @@ async function downloadBlockCodeAsSVG(sendMessage) {
         xArr.push(x);
         yArr.push(y); 
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
   });
   if (xArr.length != 0){
@@ -75,11 +73,12 @@ async function downloadBlockCodeAsSVG(sendMessage) {
       removes[i].parentNode.removeChild(removes[i]);
     }
   });
-  // replace - SPACE
+  // replace - SPACE (&nbsp;)
   const texts = Array.from(svg.getElementsByTagName('text'));
   texts.forEach(text => {
-      text.innerHTML = text.innerHTML.replace(/&nbsp;/g, ' ')
+      text.innerHTML = text.innerHTML.replace(/&nbsp;/g, ' ');
   })
+
   // image
   const textIcons=[]
   const images = Array.from(svg.getElementsByTagName('image'));
