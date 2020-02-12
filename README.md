@@ -28,6 +28,28 @@ window.onload = function(){
 }
 ```
 
+## (Japanese) JavaScriptでスタイルがcssに定義されているsvgにスタイルを適用しながらいい感じにpngに変換した
+https://qiita.com/Nikkely/items/aa485ebdbec51e49ecbc
+
+``` getComputedStyle.js
+const queue = []
+queue.push(svgElement)
+while (queue.length != 0) {
+    const element = queue.pop()
+
+    const computedStyle = window.getComputedStyle(element, '')
+    for (let property of computedStyle) {
+        element.style[property] = computedStyle.getPropertyValue(property)
+    }
+
+    const children = element.children
+
+    for (let child of children) {
+        queue.push(child)
+    }
+}
+```
+
 # License
 MIT License
 #S - Hash Scratch
