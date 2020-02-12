@@ -2,7 +2,7 @@
     "name": "#S - Hash Scratch",
     "short_name": "#S",
     "description": "For Scratch Teachers and Book Creatores, Downloading the Scratch Block Code to SVG file.",
-    "version": "3.0.2020.10211",
+    "version": "3.0.0.0",
     "permissions": [
         "activeTab"
     ],
