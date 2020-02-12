@@ -29,7 +29,7 @@ async function downloadBlockCodeAsSVG(sendMessage) {
   // Block Code SVG
   const ws = document.querySelector('svg.blocklySvg g.blocklyWorkspace')
   if (!ws){
-    sendMessage({success: true, reason: 'none'});
+    sendMessage({success: false, reason: 'none'});
     return;
   }
   const svg = ws.parentNode.cloneNode(true);
@@ -127,22 +127,34 @@ async function downloadBlockCodeAsSVG(sendMessage) {
   const divSVG = document.createElement('div');
   document.body.appendChild(divSVG);
   try {
-    divSVG.innerHTML = svg.outerHTML
-    const queue = []
-    queue.push(divSVG.firstElementChild)
+    divSVG.appendChild(svg);
+    const computedSvg = divSVG.firstChild.cloneNode(false);
+    const queue = [];
+    queue.push([svg, computedSvg]);
     while (queue.length != 0) {
-      const element = queue.pop()
-      const computedStyle = window.getComputedStyle(element, '')
+      const pair = queue.pop();
+      const rEle = pair[0];
+      const vEle = pair[1];
+      const computedStyle = window.getComputedStyle(rEle, '');
       for (let property of computedStyle) {
-        element.style[property] = computedStyle.getPropertyValue(property)
+        vEle.style[property] = computedStyle.getPropertyValue(property);
       }
-      const children = element.children
-      for (let child of children) {
-        queue.push(child)
+      const rChildren = rEle.children;
+      if (rChildren.length !== 0) {
+        for (let rChild of rChildren) {
+          const vChild = rChild.cloneNode(false);
+          vEle.appendChild(vChild);
+          queue.push([rChild, vChild]);
+        }
+      } else {
+        vEle.innerHTML = rEle.innerHTML;
       }
-    }    
+    }
+    svgText = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!-- Hashed with HashScratch -->\n` + computedSvg.outerHTML;
+  } catch (error){
+    sendMessage({success: false, reason: error});
+    return;
   } finally {
-    svgText = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!-- Hashed with HashScratch -->\n` + divSVG.innerHTML;
     document.body.removeChild(divSVG);    
   }
 
@@ -156,9 +168,15 @@ async function downloadBlockCodeAsSVG(sendMessage) {
       saveLink.href = url;
       saveLink.download = 'HashScratch.svg';
       saveLink.click();
+    } catch (error){
+      sendMessage({success: false, reason: error});
+      return;
     } finally {
       window.URL.revokeObjectURL(url);
     }
+  } catch (error){
+    sendMessage({success: false, reason: error});
+    return;
   } finally {
     document.body.removeChild(saveLink);
   }
