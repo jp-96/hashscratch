@@ -1,8 +1,8 @@
 # #S - Hash Scratch
 
-Downloading Scratch 3.0 Blocks to SVG file for the Scratch Teacher and the Book Creator.
-If you want to print out the blocks nicely, you should use the SVG file format.
-The #S, Hash Scratch is running as Chrome extention, so downloading just one clicked !
+This Chrome extension, #S - Hash Scratch is for the Scratch Teacher and the Book Creator, downloading Scratch 3.0 Blocks to SVG file.
+If you want to print out the blocks nicely, you should use the SVG format.
+The #S - Hash Scratch is running as Chrome extention, so downloading just one clicked !
 I usually use the Inkscape to create educational materials, and then copy/past to MS-Word, etc.
 
 # References
@@ -49,6 +49,9 @@ while (queue.length != 0) {
     }
 }
 ```
+
+# Donationware (Kanpaware in Japanese)
+This Chrome extension, #S - Hash Scratch is a donationware.
 
 # License
 MIT License
