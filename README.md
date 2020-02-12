@@ -1,9 +1,9 @@
 # #S - Hash Scratch
 
-Download Scratch 3.0 Blocks to SVG file For the Scratch Teacher and the Book Creator.
+Downloading Scratch 3.0 Blocks to SVG file for the Scratch Teacher and the Book Creator.
 If you want to print out the blocks nicely, you should use the SVG file format.
-The #S, Hash Scratch is running as Chrome extention, so downloading one clicked !
-I usually use the InkScape to create educational materials.
+The #S, Hash Scratch is running as Chrome extention, so downloading just one clicked !
+I usually use the Inkscape to create educational materials, and then copy/past to MS-Word, etc.
 
 # References
 

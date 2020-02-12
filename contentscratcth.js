@@ -25,6 +25,7 @@ async function downloadBlockCodeAsSVG(sendMessage) {
       target.setAttribute(attrs[i].name, attrs[i].value);
     }
   }
+  
   // Block Code SVG
   const ws = document.querySelector('svg.blocklySvg g.blocklyWorkspace')
   if (!ws){
@@ -34,8 +35,8 @@ async function downloadBlockCodeAsSVG(sendMessage) {
   const svg = ws.parentNode.cloneNode(true);
   // transform
   let svgchild = svg.querySelector('g.blocklyBlockCanvas');
-  let xArr = []
-  let yArr = []
+  let xArr = [];
+  let yArr = [];
   svgchild.childNodes.forEach(g => {
       try {
         let xy = g.getAttribute('transform').match(/translate\((.*?),(.*?)\)/);
@@ -44,7 +45,7 @@ async function downloadBlockCodeAsSVG(sendMessage) {
         xArr.push(x);
         yArr.push(y); 
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
   });
   if (xArr.length != 0){
@@ -72,11 +73,12 @@ async function downloadBlockCodeAsSVG(sendMessage) {
       removes[i].parentNode.removeChild(removes[i]);
     }
   });
-  // replace - SPACE
+  // replace - SPACE (&nbsp;)
   const texts = Array.from(svg.getElementsByTagName('text'));
   texts.forEach(text => {
-      text.innerHTML = text.innerHTML.replace(/&nbsp;/g, ' ')
+      text.innerHTML = text.innerHTML.replace(/&nbsp;/g, ' ');
   })
+
   // image
   const textIcons=[]
   const images = Array.from(svg.getElementsByTagName('image'));
@@ -92,10 +94,14 @@ async function downloadBlockCodeAsSVG(sendMessage) {
     else
     {
       const tagIcon = document.createElement('g');
-      tagIcon.innerHTML = await (await fetch(href)).text();
+      tagIcon.innerHTML = await (await fetch(href)).text(); // async/await
       const tagSVG = tagIcon.firstElementChild;
       copyAttributes(tagSVG, tagIcon)
       unwrap(tagSVG);
+      const defs = Array.from(tagSVG.getElementsByTagName('defs'));
+      for(var j=0;j<defs.length;j++){
+        unwrap(defs[j]);
+      }
       textIcon = tagIcon.outerHTML;
       textIcons[href] = textIcon;
     }
@@ -105,6 +111,14 @@ async function downloadBlockCodeAsSVG(sendMessage) {
     gTag.setAttribute('height', images[i].getAttribute('height'));
     gTag.setAttribute('width', images[i].getAttribute('width'));
     gTag.innerHTML = textIcon;
+    const childTag = gTag.firstElementChild;
+    const newID = childTag.getAttribute('id') + '_' + i;  // New id
+    childTag.setAttribute('id', newID);
+    const styles = Array.from(gTag.getElementsByTagName('style'));
+    for(var j=0;j<styles.length;j++){
+      const items = styles[j].innerHTML.split('.');
+      styles[j].innerHTML = items.join(' #' + newID + ' .'); // #id .className
+    }
     unwrap(images[i]);
   }
 

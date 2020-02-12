@@ -43,9 +43,9 @@
      inkscape:window-height="837"
      id="namedview77"
      showgrid="false"
-     inkscape:zoom="0.44678935"
-     inkscape:cx="-152.78074"
-     inkscape:cy="348.71309"
+     inkscape:zoom="0.60211846"
+     inkscape:cx="498.32984"
+     inkscape:cy="531.54104"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -990,20 +990,19 @@ color: #4C97FF !important;
 .blocklyEditableText&gt;.blocklyDropdownText {fill: #fff;}</style>
   </defs>
   <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:1.14080477"
+     id="rect869"
+     width="1488.0792"
+     height="903.47675"
+     x="-151.13306"
+     y="-71.92144" />
+  <rect
      style="opacity:0.9;fill:#cccccc;fill-opacity:0.81176471;stroke:#ffffff;stroke-width:3.76881719;stroke-miterlimit:4;stroke-dasharray:none"
      id="rect4556"
      width="1348.632"
      height="173.77817"
      x="-42.39846"
      y="-14.574436" />
-  <rect
-     height="100%"
-     width="100%"
-     class="blocklyMainBackground"
-     style="fill:url(#blocklyGridPattern19104402724659542);stroke:#c6c6c6;stroke-width:1"
-     id="rect6"
-     x="0"
-     y="184" />
   <g
      class="blocklyBlockCanvas"
      transform="matrix(3.3432886,0,0,3.3432886,-946.04181,-122.31024)"
@@ -1268,5 +1267,5 @@ color: #4C97FF !important;
        id="tspan907"
        x="93.74987"
        y="108.40823"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90.83448029px;font-family:'CP Font';-inkscape-font-specification:'CP Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;stroke:#ffffff;stroke-width:7.12740755;stroke-miterlimit:4;stroke-dasharray:none">HASH SCRACTH</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90.83448029px;font-family:'CP Font';-inkscape-font-specification:'CP Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;stroke:#ffffff;stroke-width:7.12740755;stroke-miterlimit:4;stroke-dasharray:none">HASH SCRATCH</tspan></text>
 </svg>

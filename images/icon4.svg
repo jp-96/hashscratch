@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="360"
-     inkscape:cy="611.42857"
+     inkscape:zoom="0.94335937"
+     inkscape:cx="182.97308"
+     inkscape:cy="610.65988"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,8 +60,8 @@
        d="M 46.805129,83.082761 A 91.403926,90.639021 0 0 0 30.935898,98.726343 V 210.985 a 91.403926,90.639021 0 0 0 15.966495,15.49712 H 158.46643 a 91.403926,90.639021 0 0 0 15.86924,-15.64396 V 98.579883 a 91.403926,90.639021 0 0 0 -15.9665,-15.497122 z"
        id="rect835"
        inkscape:connector-curvature="0"
-       inkscape:export-xdpi="5.2985878"
-       inkscape:export-ydpi="5.2985878" />
+       inkscape:export-xdpi="21.194351"
+       inkscape:export-ydpi="21.194351" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:105.21065521px;line-height:1.25;font-family:'CP Font';-inkscape-font-specification:'CP Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5479722"
@@ -69,8 +69,8 @@
        y="158.34268"
        id="text823"
        transform="scale(0.77308042,1.2935265)"
-       inkscape:export-xdpi="5.2985878"
-       inkscape:export-ydpi="5.2985878"><tspan
+       inkscape:export-xdpi="21.194351"
+       inkscape:export-ydpi="21.194351"><tspan
          sodipodi:role="line"
          id="tspan821"
          x="52.569805"
