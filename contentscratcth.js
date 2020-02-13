@@ -25,7 +25,6 @@ async function downloadBlockCodeAsSVG(sendMessage) {
       target.setAttribute(attrs[i].name, attrs[i].value);
     }
   }
-  
   // Block Code SVG
   const ws = document.querySelector('svg.blocklySvg g.blocklyWorkspace')
   if (!ws){
@@ -73,12 +72,6 @@ async function downloadBlockCodeAsSVG(sendMessage) {
       removes[i].parentNode.removeChild(removes[i]);
     }
   });
-  // replace - SPACE (&nbsp;)
-  const texts = Array.from(svg.getElementsByTagName('text'));
-  texts.forEach(text => {
-      text.innerHTML = text.innerHTML.replace(/&nbsp;/g, ' ');
-  })
-
   // image
   const textIcons=[]
   const images = Array.from(svg.getElementsByTagName('image'));
@@ -121,7 +114,6 @@ async function downloadBlockCodeAsSVG(sendMessage) {
     }
     unwrap(images[i]);
   }
-
   // compute style
   var svgText;
   const divSVG = document.createElement('div');
@@ -150,14 +142,20 @@ async function downloadBlockCodeAsSVG(sendMessage) {
         vEle.innerHTML = rEle.innerHTML;
       }
     }
+    // Text
     svgText = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!-- Hashed with HashScratch -->\n` + computedSvg.outerHTML;
+    // replace - SPACE (&nbsp;)
+    const nbsp = String.fromCodePoint(0xa0);
+    svgText = svgText.replace(/&nbsp;/g, nbsp);
+    // replace - font (Arial)
+    const font = '&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;';
+    svgText = svgText.replace(/&quot;Helvetica Neue&quot;, Helvetica, sans-serif;/g, font);
   } catch (error){
     sendMessage({success: false, reason: error});
     return;
   } finally {
     document.body.removeChild(divSVG);    
   }
-
   // execute download
   const saveLink = document.createElement('a');
   document.body.appendChild(saveLink);
@@ -180,7 +178,6 @@ async function downloadBlockCodeAsSVG(sendMessage) {
   } finally {
     document.body.removeChild(saveLink);
   }
-  
   // completed
   sendMessage({success: true, reason: 'Hashed Scratch!'})
 }

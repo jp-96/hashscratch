@@ -50,8 +50,9 @@ while (queue.length != 0) {
 }
 ```
 
-# Donationware (Kanpaware in Japanese)
-This Chrome extension, #S - Hash Scratch is a donationware.
+# Giving to ULTIMATE PICTURES
+Donate by purchasing the book at the following URL, if you like.
+https://leanpub.com/hash-scratch
 
 # License
 MIT License
