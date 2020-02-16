@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   class="blocklySvg"
+   width="1280"
+   height="800"
+   id="svg75"
+   sodipodi:docname="HashScratch.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:export-filename="C:\workgit\HashScratch\images\HashScratch.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <metadata
+     id="metadata79">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     id="namedview77"
+     showgrid="false"
+     inkscape:zoom="0.60211846"
+     inkscape:cx="498.32984"
+     inkscape:cy="531.54104"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg75" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.blocklyDraggable {}
+.blocklySvg {
+background-color: #F9F9F9;
+outline: none;
+overflow: hidden;
+position: absolute;
+display: block;
+}
+.blocklyRelativeWrapper {
+position: relative;
+width: 100%;
+height: 100%;
+}
+.blocklyWidgetDiv {
+display: none;
+position: absolute;
+z-index: 99999;
+}
+.injectionDiv {
+height: 100%;
+position: relative;
+overflow: hidden;
+touch-action: none
+}
+.blocklyNonSelectable {
+user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+.blocklyWidgetDiv.fieldTextInput {
+overflow: hidden;
+border: 1px solid;
+box-sizing: border-box;
+transform-origin: 0 0;
+-ms-transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-webkit-transform-origin: 0 0;
+}
+.blocklyWidgetDiv.fieldTextInput.removableTextInput {
+overflow: visible;
+}
+.blocklyTextDropDownArrow {
+position: absolute;
+}
+.blocklyTextRemoveIcon {
+position: absolute;
+width: 24px;
+height: 24px;
+top: -40px;
+left: 50%;
+margin-left: -12px;
+cursor: pointer;
+}
+.blocklyNonSelectable {
+user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+.blocklyWsDragSurface {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+}
+.blocklyWsDragSurface.blocklyOverflowVisible {
+overflow: visible;
+}
+.blocklyBlockDragSurface {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+overflow: visible !important;
+z-index: 50;
+}
+.blocklyTooltipDiv {
+background-color: #ffffc7;
+border: 1px solid #ddc;
+box-shadow: 4px 4px 20px 1px rgba(0,0,0,.15);
+color: #000;
+display: none;
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-size: 9pt;
+opacity: 0.9;
+padding: 2px;
+position: absolute;
+z-index: 100000;
+}
+.blocklyDropDownDiv {
+position: fixed;
+left: 0;
+top: 0;
+z-index: 1000;
+display: none;
+border: 1px solid;
+border-radius: 4px;
+box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, .3);
+padding: 4px;
+-webkit-user-select: none;
+min-height: 15px
+}
+.blocklyDropDownContent {
+max-height: 300px;
+overflow: auto;
+}
+.blocklyDropDownArrow {
+position: absolute;
+left: 0;
+top: 0;
+width: 16px;
+height: 16px;
+z-index: -1;
+background-color: inherit;
+border-color: inherit;
+}
+.blocklyDropDownButton {
+display: inline-block;
+float: left;
+padding: 0;
+margin: 4px;
+border-radius: 4px;
+outline: none;
+border: 1px solid;
+transition: box-shadow .1s;
+cursor: pointer;
+}
+.blocklyDropDownButtonHover {
+box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
+}
+.blocklyDropDownButton:active {
+box-shadow: 0px 0px 0px 6px rgba(0,0,0,0.1);
+}
+.blocklyDropDownButton &gt; img {
+width: 80%;
+height: 80%;
+margin-top: 5%
+}
+.blocklyDropDownPlaceholder {
+display: inline-block;
+float: left;
+padding: 0;
+margin: 4px;
+}
+.blocklyNumPadButton {
+display: inline-block;
+float: left;
+padding: 0;
+width: 48px;
+height: 48px;
+margin: 4px;
+border-radius: 4px;
+background: #547AB2;
+color: white;
+outline: none;
+border: 1px solid #435F91;
+cursor: pointer;
+font-weight: 600;
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-size: 12pt;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.blocklyNumPadButton &gt; img {
+margin-top: 10%;
+width: 80%;
+height: 80%;
+}
+.blocklyNumPadButton:active {
+background: #435F91;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.arrowTop {
+border-top: 1px solid;
+border-left: 1px solid;
+border-top-left-radius: 4px;
+border-color: inherit;
+}
+.arrowBottom {
+border-bottom: 1px solid;
+border-right: 1px solid;
+border-bottom-right-radius: 4px;
+border-color: inherit;
+}
+.valueReportBox {
+min-width: 50px;
+max-width: 300px;
+max-height: 200px;
+overflow: auto;
+word-wrap: break-word;
+text-align: center;
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-size: .8em;
+}
+.blocklyResizeSE {
+cursor: se-resize;
+fill: #aaa;
+}
+.blocklyResizeSW {
+cursor: sw-resize;
+fill: #aaa;
+}
+.blocklyResizeLine {
+stroke: #888;
+stroke-width: 1;
+}
+.blocklyHighlightedConnectionPath {
+fill: none;
+stroke: #fc3;
+stroke-width: 4px;
+}
+.blocklyPath {
+stroke-width: 1px;
+}
+.blocklySelected&gt;.blocklyPath {
+}
+.blocklySelected&gt;.blocklyPathLight {
+display: none;
+}
+.blocklyDraggable {
+cursor: url(&quot;/static/blocks-media/handopen.cur&quot;), auto;
+cursor: grab;
+cursor: -webkit-grab;
+cursor: -moz-grab;
+}
+.blocklyDragging {
+cursor: url(&quot;/static/blocks-media/handclosed.cur&quot;), auto;
+cursor: grabbing;
+cursor: -webkit-grabbing;
+cursor: -moz-grabbing;
+}
+.blocklyDraggable:active {
+cursor: url(&quot;/static/blocks-media/handclosed.cur&quot;), auto;
+cursor: grabbing;
+cursor: -webkit-grabbing;
+cursor: -moz-grabbing;
+}
+.blocklyBlockDragSurface .blocklyDraggable {
+cursor: url(&quot;/static/blocks-media/handclosed.cur&quot;), auto;
+cursor: grabbing;
+cursor: -webkit-grabbing;
+cursor: -moz-grabbing;
+}
+.blocklyDragging.blocklyDraggingDelete {
+cursor: url(&quot;/static/blocks-media/handdelete.cur&quot;), auto;
+}
+.blocklyDragging.blocklyDraggingMouseThrough {
+pointer-events: none;
+}
+.blocklyToolboxDelete {
+cursor: url(&quot;/static/blocks-media/handdelete.cur&quot;), auto;
+}
+.blocklyToolboxGrab {
+cursor: url(&quot;/static/blocks-media/handclosed.cur&quot;), auto;
+cursor: grabbing;
+cursor: -webkit-grabbing;
+}
+.blocklyDragging&gt;.blocklyPath,
+.blocklyDragging&gt;.blocklyPathLight {
+fill-opacity: 1.0;
+stroke-opacity: 1.0;
+}
+.blocklyDragging&gt;.blocklyPath {
+}
+.blocklyDisabled&gt;.blocklyPath {
+fill-opacity: .5;
+stroke-opacity: .5;
+}
+.blocklyInsertionMarker&gt;.blocklyPath {
+stroke: none;
+}
+.blocklyText {
+fill: #fff;
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: 500;
+}
+.blocklyTextTruncated {
+font-size: 11pt;
+}
+.blocklyNonEditableText&gt;text {
+pointer-events: none;
+}
+.blocklyNonEditableText&gt;text,
+.blocklyEditableText&gt;text {
+fill: #575E75;
+}
+.blocklyEditableText&gt;.blocklyEditableLabel {
+fill: #fff;
+}
+.blocklyDropdownText {
+fill: #fff !important;
+}
+.blocklyBubbleText {
+fill: #575E75;
+}
+.blocklyFlyout {
+position: absolute;
+z-index: 20;
+}
+.blocklyFlyoutButton {
+fill: none;
+pointer-events: all;
+}
+.blocklyFlyoutButtonBackground {
+stroke: #c6c6c6;
+}
+.blocklyFlyoutButton .blocklyText {
+fill: #575E75;
+}
+.blocklyFlyoutButtonShadow {
+fill: transparent;
+}
+.blocklyFlyoutButton:hover {
+fill: white;
+cursor: pointer;
+}
+.blocklyFlyoutLabel {
+cursor: default;
+}
+.blocklyFlyoutLabelBackground {
+opacity: 0;
+}
+.blocklyTouchTargetBackground {
+fill: transparent;
+cursor: pointer;
+}
+.blocklyFlyoutLabelText {
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-size: 14pt;
+fill: #575E75;
+font-weight: bold;
+}
+.blocklySvg text, .blocklyBlockDragSurface text, .blocklyFlyout text, .blocklyToolboxDiv text {
+user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+cursor: inherit;
+}
+.blocklyHidden {
+display: none;
+}
+.blocklyFieldDropdown:not(.blocklyHidden) {
+display: block;
+}
+.blocklyIconGroup {
+cursor: default;
+}
+.blocklyIconGroup:not(:hover),
+.blocklyIconGroupReadonly {
+opacity: .6;
+}
+.blocklyIconShape {
+fill: #00f;
+stroke: #fff;
+stroke-width: 1px;
+}
+.blocklyIconSymbol {
+fill: #fff;
+}
+.blocklyMinimalBody {
+margin: 0;
+padding: 0;
+}
+.blocklyCommentForeignObject {
+position: relative;
+z-index: 0;
+}
+.blocklyCommentRect {
+fill: #E7DE8E;
+stroke: #bcA903;
+stroke-width: 1px
+}
+.blocklyCommentTarget {
+fill: transparent;
+stroke: #bcA903;
+}
+.blocklyCommentTargetFocused {
+fill: none;
+}
+.blocklyCommentHandleTarget {
+fill: none;
+}
+.blocklyCommentHandleTargetFocused {
+fill: transparent;
+}
+.blocklyFocused&gt;.blocklyCommentRect {
+fill: #B9B272;
+stroke: #B9B272;
+}
+.blocklySelected&gt;.blocklyCommentTarget {
+stroke: #fc3;
+stroke-width: 3px;
+}
+.blocklyCommentTextarea {
+background-color: #fef49c;
+border: 0;
+outline: 0;
+margin: 0;
+padding: 3px;
+resize: none;
+display: block;
+overflow: hidden;
+}
+.blocklyCommentDeleteIcon {
+cursor: pointer;
+fill: #000;
+display: none
+}
+.blocklySelected &gt; .blocklyCommentDeleteIcon {
+display: block
+}
+.blocklyDeleteIconShape {
+fill: #000;
+stroke: #000;
+stroke-width: 1px;
+}
+.blocklyDeleteIconShape.blocklyDeleteIconHighlighted {
+stroke: #fc3;
+}
+.scratchCommentForeignObject {
+position: relative;
+}
+.scratchCommentBody {
+background-color: #fef49c;
+border-radius: 4px;
+}
+.scratchCommentRect {
+fill: #fef49c;
+}
+.scratchCommentTarget {
+fill: transparent;
+}
+.scratchWorkspaceCommentBorder {
+stroke: #bcA903;
+stroke-width: 1px;
+}
+.scratchCommentTargetFocused {
+fill: none;
+}
+.scratchCommentTopBar {
+fill: #000000;
+fill-opacity: 0.1
+}
+.scratchCommentText {
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: 400;
+}
+.scratchCommentTextarea {
+background-color: #fef49c;
+border: 0;
+outline: 0;
+padding: 0;
+resize: none;
+overflow: hidden;
+}
+.scratchCommentTextarea::placeholder {
+color: rgba(0,0,0,0.5);
+font-style: italic;
+}
+.scratchCommentResizeSE {
+cursor: se-resize;
+fill: transparent;
+}
+.scratchCommentResizeSW {
+cursor: sw-resize;
+fill: transparent;
+}
+.blocklyHtmlInput {
+border: none;
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-size: 12pt;
+height: 100%;
+margin: 0;
+outline: none;
+box-sizing: border-box;
+width: 100%;
+text-align: center;
+color: #575E75;
+font-weight: 500;
+}
+.blocklyMainBackground {
+stroke-width: 1;
+stroke: #c6c6c6;
+}
+.blocklyMutatorBackground {
+fill: #fff;
+stroke: #ddd;
+stroke-width: 1;
+}
+.blocklyFlyoutBackground {
+fill: #F9F9F9;
+fill-opacity: .8;
+}
+.blocklyMainWorkspaceScrollbar {
+z-index: 20;
+}
+.blocklyFlyoutScrollbar {
+z-index: 30;
+}
+.blocklyScrollbarHorizontal, .blocklyScrollbarVertical {
+position: absolute;
+outline: none;
+}
+.blocklyScrollbarBackground {
+opacity: 0;
+}
+.blocklyScrollbarHandle {
+fill: #CECDCE;
+}
+.blocklyScrollbarBackground:hover+.blocklyScrollbarHandle,
+.blocklyScrollbarHandle:hover {
+fill: #CECDCEHover;
+}
+.blocklyZoom&gt;image {
+opacity: 1;
+}
+.blocklyFlyout .blocklyScrollbarHandle {
+fill: #bbb;
+}
+.blocklyFlyout .blocklyScrollbarBackground:hover+.blocklyScrollbarHandle,
+.blocklyFlyout .blocklyScrollbarHandle:hover {
+fill: #aaa;
+}
+.blocklyInvalidInput {
+background: #faa;
+}
+.blocklyAngleCircle {
+stroke: #3373CC;
+stroke-width: 1;
+fill: #4280D7;
+}
+.blocklyAngleCenterPoint {
+stroke: #fff;
+stroke-width: 1;
+fill: #fff;
+}
+.blocklyAngleDragHandle {
+stroke: #fff;
+stroke-width: 5;
+stroke-opacity: 0.25;
+fill: #fff;
+cursor: pointer;
+}
+.blocklyAngleDragArrow {
+pointer-events: none
+}
+.blocklyAngleMarks {
+stroke: #fff;
+stroke-width: 1;
+stroke-opacity: 0.5;
+}
+.blocklyAngleGauge {
+fill: #fff;
+fill-opacity: 0.20;
+}
+.blocklyAngleLine {
+stroke: #fff;
+stroke-width: 1;
+stroke-linecap: round;
+pointer-events: none;
+}
+.blocklyContextMenu {
+border-radius: 4px;
+max-height: 100%;
+}
+.blocklyDropdownMenu {
+padding: 0 !important;
+}
+.blocklyDropDownNumPad {
+background-color: #547AB2;
+}
+.blocklyWidgetDiv .goog-option-selected .goog-menuitem-checkbox,
+.blocklyWidgetDiv .goog-option-selected .goog-menuitem-icon {
+background: url(/static/blocks-media/sprites.png) no-repeat -48px -16px !important;
+}
+.blocklyToolboxDiv {
+background-color: #FFFFFF;
+color: #575E75;
+overflow-x: visible;
+overflow-y: auto;
+position: absolute;
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+z-index: 40;
+-webkit-tap-highlight-color: transparent;
+}
+.blocklyTreeRoot {
+padding: 4px 0;
+}
+.blocklyTreeRoot:focus {
+outline: none;
+}
+.blocklyTreeRow {
+height: 22px;
+line-height: 22px;
+margin-bottom: 3px;
+padding-right: 8px;
+white-space: nowrap;
+}
+.blocklyHorizontalTree {
+float: left;
+margin: 1px 5px 8px 0;
+}
+.blocklyHorizontalTreeRtl {
+float: right;
+margin: 1px 0 8px 5px;
+}
+.blocklyToolboxDiv[dir=&quot;RTL&quot;] .blocklyTreeRow {
+margin-left: 8px;
+}
+.blocklyTreeRow:not(.blocklyTreeSelected):hover {
+background-color: #e4e4e4;
+}
+.blocklyTreeSeparator {
+border-bottom: solid #e5e5e5 1px;
+height: 0;
+margin: 5px 0;
+}
+.blocklyTreeSeparatorHorizontal {
+border-right: solid #e5e5e5 1px;
+width: 0;
+padding: 5px 0;
+margin: 0 5px;
+}
+.blocklyTreeIcon {
+background-image: url(/static/blocks-media/sprites.png);
+height: 16px;
+vertical-align: middle;
+width: 16px;
+}
+.blocklyTreeIconClosedLtr {
+background-position: -32px -1px;
+}
+.blocklyTreeIconClosedRtl {
+background-position: 0px -1px;
+}
+.blocklyTreeIconOpen {
+background-position: -16px -1px;
+}
+.blocklyTreeSelected&gt;.blocklyTreeIconClosedLtr {
+background-position: -32px -17px;
+}
+.blocklyTreeSelected&gt;.blocklyTreeIconClosedRtl {
+background-position: 0px -17px;
+}
+.blocklyTreeSelected&gt;.blocklyTreeIconOpen {
+background-position: -16px -17px;
+}
+.blocklyTreeIconNone,
+.blocklyTreeSelected&gt;.blocklyTreeIconNone {
+background-position: -48px -1px;
+}
+.blocklyTreeLabel {
+cursor: default;
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-size: 16px;
+padding: 0 3px;
+vertical-align: middle;
+}
+.blocklyToolboxDelete .blocklyTreeLabel {
+cursor: url(&quot;/static/blocks-media/handdelete.cur&quot;), auto;
+}
+.blocklyTreeSelected .blocklyTreeLabel {
+color: #fff;
+}
+.blocklyDropDownDiv .goog-slider-horizontal {
+margin: 8px;
+height: 22px;
+width: 150px;
+position: relative;
+outline: none;
+border-radius: 11px;
+margin-bottom: 20px;
+}
+.blocklyDropDownDiv .goog-slider-horizontal .goog-slider-thumb {
+width: 26px;
+height: 26px;
+top: -1px;
+position: absolute;
+background-color: white;
+border-radius: 100%;
+-webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+}
+.scratchEyedropper {
+background: none;
+outline: none;
+border: none;
+width: 100%;
+text-align: center;
+border-top: 1px solid #ddd;
+padding-top: 5px;
+cursor: pointer;
+}
+.scratchColourPickerLabel {
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-size: 0.65rem;
+color: #575E75;
+margin: 8px;
+}
+.scratchColourPickerLabelText {
+font-weight: bold;
+}
+.scratchColourPickerReadout {
+margin-left: 10px;
+}
+.scratchMatrixButtonDiv {
+width: 50%;
+text-align: center;
+float: left;
+}
+.scratchNotePickerKeyLabel {
+font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-size: 0.75rem;
+fill: #575E75;
+pointer-events: none;
+}
+.blocklyWidgetDiv .goog-menu {
+background: #fff;
+border-color: #ccc #666 #666 #ccc;
+border-style: solid;
+border-width: 1px;
+cursor: default;
+font: normal 13px &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+margin: 0;
+outline: none;
+padding: 4px 0;
+position: absolute;
+overflow-y: auto;
+overflow-x: hidden;
+z-index: 20000;
+}
+.blocklyDropDownDiv .goog-menu {
+cursor: default;
+font: normal 13px &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+outline: none;
+z-index: 20000;
+}
+.blocklyWidgetDiv .goog-menuitem {
+color: #000;
+font: normal 13px &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+list-style: none;
+margin: 0;
+padding: 4px 7em 4px 28px;
+white-space: nowrap;
+}
+.blocklyDropDownDiv .goog-menuitem {
+color: #fff;
+font: normal 13px &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+font-weight: bold;
+list-style: none;
+margin: 0;
+min-height: 24px;
+padding: 4px 7em 4px 28px;
+white-space: nowrap;
+}
+.blocklyWidgetDiv .goog-menuitem.goog-menuitem-rtl, 
+.blocklyDropDownDiv .goog-menuitem.goog-menuitem-rtl {
+padding-left: 7em;
+padding-right: 28px;
+}
+.blocklyWidgetDiv .goog-menu-nocheckbox .goog-menuitem,
+.blocklyWidgetDiv .goog-menu-noicon .goog-menuitem, 
+.blocklyDropDownDiv .goog-menu-nocheckbox .goog-menuitem,
+.blocklyDropDownDiv .goog-menu-noicon .goog-menuitem { 
+padding-left: 12px;
+}
+.blocklyWidgetDiv .goog-menu-noaccel .goog-menuitem, 
+.blocklyDropDownDiv .goog-menu-noaccel .goog-menuitem {
+padding-right: 20px;
+}
+.blocklyWidgetDiv .goog-menuitem-content 
+.blocklyDropDownDiv .goog-menuitem-content {
+color: #000;
+font: normal 13px &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+}
+.blocklyWidgetDiv .goog-menuitem-disabled .goog-menuitem-accel,
+.blocklyWidgetDiv .goog-menuitem-disabled .goog-menuitem-content, 
+.blocklyDropDownDiv .goog-menuitem-disabled .goog-menuitem-accel,
+.blocklyDropDownDiv .goog-menuitem-disabled .goog-menuitem-content {
+color: #ccc !important;
+}
+.blocklyWidgetDiv .goog-menuitem-disabled .goog-menuitem-icon, 
+.blocklyDropDownDiv .goog-menuitem-disabled .goog-menuitem-icon {
+opacity: 0.3;
+-moz-opacity: 0.3;
+filter: alpha(opacity=30);
+}
+.blocklyWidgetDiv .goog-menuitem-highlight,
+.blocklyWidgetDiv .goog-menuitem-hover {
+background-color: #d6e9f8;
+border-color: #d6e9f8;
+border-style: dotted;
+border-width: 1px 0;
+padding-bottom: 3px;
+padding-top: 3px;
+}
+.blocklyDropDownDiv .goog-menuitem-highlight,
+.blocklyDropDownDiv .goog-menuitem-hover {
+background-color: rgba(0, 0, 0, 0.2);
+}
+.blocklyWidgetDiv .goog-menuitem-checkbox,
+.blocklyWidgetDiv .goog-menuitem-icon, 
+.blocklyDropDownDiv .goog-menuitem-checkbox,
+.blocklyDropDownDiv .goog-menuitem-icon {
+background-repeat: no-repeat;
+height: 16px;
+left: 6px;
+position: absolute;
+right: auto;
+vertical-align: middle;
+width: 16px;
+}
+.blocklyWidgetDiv .goog-option-selected .goog-menuitem-checkbox,
+.blocklyWidgetDiv .goog-option-selected .goog-menuitem-icon,
+.blocklyDropDownDiv .goog-option-selected .goog-menuitem-checkbox,
+.blocklyDropDownDiv .goog-option-selected .goog-menuitem-icon {
+background: url(/static/blocks-media/sprites.png) no-repeat -48px -16px !important;
+position: static;
+float: left;
+margin-left: -24px;
+}
+.blocklyWidgetDiv .goog-menuitem-rtl .goog-menuitem-checkbox,
+.blocklyWidgetDiv .goog-menuitem-rtl .goog-menuitem-icon,
+.blocklyDropDownDiv .goog-menuitem-rtl .goog-menuitem-checkbox,
+.blocklyDropDownDiv .goog-menuitem-rtl .goog-menuitem-icon {
+float: right;
+margin-right: -24px;
+}
+.blocklyWidgetDiv .goog-menuitem-accel, 
+.blocklyDropDownDiv .goog-menuitem-accel {
+color: #999;
+direction: ltr;
+left: auto;
+padding: 0 6px;
+position: absolute;
+right: 0;
+text-align: right;
+}
+.blocklyWidgetDiv .goog-menuitem-rtl .goog-menuitem-accel, 
+.blocklyDropDownDiv .goog-menuitem-rtl .goog-menuitem-accel {
+left: 0;
+right: auto;
+text-align: left;
+}
+.blocklyWidgetDiv .goog-menuitem-mnemonic-hint, 
+.blocklyDropDownDiv .goog-menuitem-mnemonic-hint {
+text-decoration: underline;
+}
+.blocklyWidgetDiv .goog-menuitem-mnemonic-separator, 
+.blocklyDropDownDiv .goog-menuitem-mnemonic-separator {
+color: #999;
+font-size: 12px;
+padding-left: 4px;
+}
+.blocklyWidgetDiv .goog-menuseparator, 
+.blocklyDropDownDiv .goog-menuseparator {
+border-top: 1px solid #ccc;
+margin: 4px 0;
+padding: 0;
+}
+.blocklyFlyoutCheckbox {
+fill: white;
+stroke: #c8c8c8;
+}
+.checked &gt; .blocklyFlyoutCheckbox {
+fill: #4C97FF;
+stroke: #3373CC;
+}
+.blocklyFlyoutCheckboxPath {
+fill: transparent;
+stroke: white;
+stroke-width: 3;
+stroke-linecap: round;
+stroke-linejoin: round;
+}
+.scratchCategoryMenu {
+width: 60px;
+background: #FFFFFF;
+color: #575E75;
+font-size: .7rem;
+user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+.scratchCategoryMenuHorizontal {
+width: 100%;
+height: 50px;
+background: #FFFFFF;
+color: #575E75;
+font-size: .7em;
+user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+.scratchCategoryMenuHorizontal .scratchCategoryMenuRow {
+float: left;
+margin: 3px;
+}
+.scratchCategoryMenuRow {
+}
+.scratchCategoryMenuItem {
+padding: 0.375rem 0px;
+cursor: pointer;
+text-align: center;
+}
+.scratchCategoryMenuHorizontal .scratchCategoryMenuItem {
+padding: 6px 5px;
+}
+.scratchCategoryMenuItem.categorySelected {
+background: #E9EEF2;
+}
+.scratchCategoryItemBubble {
+width: 1.25rem;
+height: 1.25rem;
+border: 1px solid;
+border-radius: 100%;
+margin: 0 auto 0.125rem;
+}
+.scratchCategoryItemIcon {
+width: 1.25rem;
+height: 1.25rem;
+margin: 0 auto 0.125rem;
+background-size: 100%;
+}
+.scratchCategoryMenuItem:hover {
+color: #4C97FF !important;
+}
+.blocklyEditableText&gt;.blocklyDropdownText {fill: #fff;}</style>
+  </defs>
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:1.14080477"
+     id="rect869"
+     width="1488.0792"
+     height="903.47675"
+     x="-151.13306"
+     y="-71.92144" />
+  <rect
+     style="opacity:0.9;fill:#cccccc;fill-opacity:0.81176471;stroke:#ffffff;stroke-width:3.76881719;stroke-miterlimit:4;stroke-dasharray:none"
+     id="rect4556"
+     width="1348.632"
+     height="173.77817"
+     x="-42.39846"
+     y="-14.574436" />
+  <g
+     class="blocklyBlockCanvas"
+     transform="matrix(3.3432886,0,0,3.3432886,-946.04181,-122.31024)"
+     id="g64">
+    <g
+       data-id="$^sk`RqxG$)ALSolaun9"
+       class="blocklyDraggable blocklySelected"
+       data-shapes="hat"
+       data-category="events"
+       transform="translate(307.44239,113.33836)"
+       id="g62">
+      <path
+         class="blocklyPath blocklyBlockBackground"
+         d="m 0,0 c 25,-22 71,-22 96,0 h 60 a 4,4 0 0 1 4,4 v 40 a 4,4 0 0 1 -4,4 H 48 c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 H 24 c -2,0 -3,-1 -4,-2 L 16,50 C 15,49 14,48 12,48 H 4 A 4,4 0 0 1 0,44 Z"
+         id="path8"
+         inkscape:connector-curvature="0"
+         style="fill:#ffbf00;fill-opacity:1;stroke:#cc9900;stroke-width:1px" />
+      <g
+         transform="translate(8,12)"
+         id="g14">
+        <g
+           id="g12">
+          <use
+             xlink:href="#/static/blocks-media/green-flag.svg"
+             height="24"
+             width="24"
+             serialnum="0"
+             id="use10"
+             x="0"
+             y="0"
+             transform="translate(0,-184)" />
+        </g>
+      </g>
+      <text
+         class="blocklyText"
+         y="2"
+         dominant-baseline="middle"
+         dy="0"
+         x="56"
+         transform="translate(40,24)"
+         id="text16"
+         style="font-weight:500;font-size:16px;font-family:'Helvetica Neue', Helvetica, sans-serif;dominant-baseline:middle;text-anchor:middle;fill:#ffffff">が押されたとき</text>
+      <g
+         data-id="7Iv)1:Ej_eR_6!`*,=,7"
+         class="blocklyDraggable"
+         data-shapes="stack"
+         data-category="looks"
+         transform="translate(0,48)"
+         id="g60">
+        <path
+           class="blocklyPath blocklyBlockBackground"
+           d="M 0,4 A 4,4 0 0 1 4,0 h 8 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 h 238.44516 a 4,4 0 0 1 4,4 v 40 a 4,4 0 0 1 -4,4 H 48 c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 H 24 c -2,0 -3,-1 -4,-2 L 16,50 C 15,49 14,48 12,48 H 4 A 4,4 0 0 1 0,44 Z"
+           id="path18"
+           inkscape:connector-curvature="0"
+           style="fill:#9966ff;fill-opacity:1;stroke:#774dcb;stroke-width:1px" />
+        <g
+           data-id="EDE)M28)Ans_~82f.EuR"
+           data-argument-type="text"
+           data-shapes="argument round"
+           transform="translate(48,8)"
+           id="g26">
+          <path
+             class="blocklyPath blocklyBlockBackground"
+             d="m 0,0 m 16,0 h 74.445213 a 16,16 0 0 1 0,32 H 16 A 16,16 0 0 1 16,0 Z"
+             id="path20"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff;fill-opacity:1;stroke:#774dcb;stroke-width:1px" />
+          <g
+             class="blocklyEditableText"
+             transform="translate(8)"
+             id="g24">
+            <text
+               class="blocklyText"
+               x="45.222607"
+               y="18"
+               dominant-baseline="middle"
+               dy="0"
+               id="text22"
+               style="font-weight:500;font-size:16px;font-family:'Helvetica Neue', Helvetica, sans-serif;dominant-baseline:middle;text-anchor:middle;fill:#575e75">こんにちは!</text>
+          </g>
+        </g>
+        <g
+           data-id="5{[k-S*`[;H`Nli)rCNm"
+           data-argument-type="text number"
+           data-shapes="argument round"
+           transform="translate(186.44521,8)"
+           id="g34">
+          <path
+             class="blocklyPath blocklyBlockBackground"
+             d="m 0,0 m 16,0 h 8 a 16,16 0 0 1 0,32 H 16 A 16,16 0 0 1 16,0 Z"
+             id="path28"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff;fill-opacity:1;stroke:#774dcb;stroke-width:1px" />
+          <g
+             class="blocklyEditableText"
+             transform="translate(8)"
+             id="g32">
+            <text
+               class="blocklyText"
+               x="12"
+               y="18"
+               dominant-baseline="middle"
+               dy="0"
+               id="text30"
+               style="font-weight:500;font-size:16px;font-family:'Helvetica Neue', Helvetica, sans-serif;dominant-baseline:middle;text-anchor:middle;fill:#575e75">2</text>
+          </g>
+        </g>
+        <path
+           class="blocklyPath"
+           style="visibility:hidden;fill:#774dcb;stroke-width:1px"
+           d=""
+           id="path36"
+           inkscape:connector-curvature="0" />
+        <text
+           class="blocklyText"
+           y="2"
+           dominant-baseline="middle"
+           dy="0"
+           x="8"
+           transform="translate(162.44521,24)"
+           id="text38"
+           style="font-weight:500;font-size:16px;font-family:'Helvetica Neue', Helvetica, sans-serif;dominant-baseline:middle;text-anchor:middle;fill:#ffffff">と</text>
+        <path
+           class="blocklyPath"
+           style="visibility:hidden;fill:#774dcb;stroke-width:1px"
+           d=""
+           id="path40"
+           inkscape:connector-curvature="0" />
+        <text
+           class="blocklyText"
+           y="2"
+           dominant-baseline="middle"
+           dy="0"
+           x="23.999973"
+           transform="translate(234.44521,24)"
+           id="text42"
+           style="font-weight:500;font-size:16px;font-family:'Helvetica Neue', Helvetica, sans-serif;dominant-baseline:middle;text-anchor:middle;fill:#ffffff">秒言う</text>
+        <g
+           data-id="GF(ic`.k!DWI[ujV@Ji{"
+           class="blocklyDraggable"
+           data-shapes="stack"
+           data-category="looks"
+           transform="translate(0,48)"
+           id="g58">
+          <path
+             class="blocklyPath blocklyBlockBackground"
+             d="M 0,4 A 4,4 0 0 1 4,0 h 8 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 h 178.0389 a 4,4 0 0 1 4,4 v 40 a 4,4 0 0 1 -4,4 H 48 c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 H 24 c -2,0 -3,-1 -4,-2 L 16,50 C 15,49 14,48 12,48 H 4 A 4,4 0 0 1 0,44 Z"
+             id="path44"
+             inkscape:connector-curvature="0"
+             style="fill:#9966ff;fill-opacity:1;stroke:#774dcb;stroke-width:1px" />
+          <g
+             data-id="V=dHSX(voo?^0KjA,(iB"
+             data-argument-type="text"
+             data-shapes="argument round"
+             transform="translate(48,8)"
+             id="g52">
+            <path
+               class="blocklyPath blocklyBlockBackground"
+               d="m 0,0 m 16,0 h 86.03896 a 16,16 0 0 1 0,32 H 16 A 16,16 0 0 1 16,0 Z"
+               id="path46"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;fill-opacity:1;stroke:#774dcb;stroke-width:1px" />
+            <g
+               class="blocklyEditableText"
+               transform="translate(8)"
+               id="g50">
+              <text
+                 class="blocklyText"
+                 x="51.019478"
+                 y="18"
+                 dominant-baseline="middle"
+                 dy="0"
+                 id="text48"
+                 style="font-weight:500;font-size:16px;font-family:'Helvetica Neue', Helvetica, sans-serif;dominant-baseline:middle;text-anchor:middle;fill:#575e75">Hash Scratch</text>
+            </g>
+          </g>
+          <path
+             class="blocklyPath"
+             style="visibility:hidden;fill:#774dcb;stroke-width:1px"
+             d=""
+             id="path54"
+             inkscape:connector-curvature="0" />
+          <text
+             class="blocklyText"
+             y="2"
+             dominant-baseline="middle"
+             dy="0"
+             x="23.999973"
+             transform="translate(174.03896,24)"
+             id="text56"
+             style="font-weight:500;font-size:16px;font-family:'Helvetica Neue', Helvetica, sans-serif;dominant-baseline:middle;text-anchor:middle;fill:#ffffff">と言う</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <symbol
+     id="/static/blocks-media/green-flag.svg"
+     xmlhttprequest="/static/blocks-media/green-flag.svg"
+     version="1.1"
+     x="0px"
+     y="0px"
+     viewbox="0 0 24 24"
+     xml:space="preserve"
+     transform="translate(0,184)"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<style
+   type="text/css"
+   id="style66">
+	.st0{fill:#45993D;}
+	.st1{fill:#4CBF56;}
+</style>
+<title
+   id="title68">greenflag</title>
+<path
+   class="st0"
+   d="M 20.8,3.7 C 20.4,3.5 19.9,3.6 19.6,3.9 17.6,5.5 14.8,5.5 12.8,3.9 10.5,2 7.2,1.6 4.5,2.9 V 2.5 c 0,-0.6 -0.5,-1 -1,-1 -0.5,0 -1,0.4 -1,1 v 18.8 c 0,0.5 0.5,1 1,1 h 0.1 c 0.5,0 1,-0.5 1,-1 v -6.4 c 1,-0.7 2.1,-1.2 3.4,-1.3 1.2,0 2.4,0.4 3.4,1.2 2.9,2.3 7,2.3 9.8,0 0.3,-0.2 0.4,-0.5 0.4,-0.9 V 4.7 c 0,-0.5 -0.3,-0.9 -0.8,-1 z m -0.3,10.2 c 0,0 0,0 0,0 C 18,16 14.4,16 11.9,14 10.8,13.1 9.4,12.6 7.9,12.6 6.7,12.7 5.6,13.1 4.5,13.7 V 4 C 7,2.6 10,2.9 12.2,4.6 c 2.4,1.9 5.7,1.9 8.1,0 0.1,0 0.1,0 0.2,0 0,0 0.1,0.1 0.1,0.1 z"
+   id="path70"
+   inkscape:connector-curvature="0"
+   style="fill:#45993d" />
+<path
+   class="st1"
+   d="m 20.6,4.8 -0.1,9.1 c 0,0 0,0.1 0,0.1 -2.5,2 -6.1,2 -8.6,0 -1.1,-0.9 -2.5,-1.4 -4,-1.4 -1.2,0.1 -2.3,0.5 -3.4,1.1 V 4 C 7,2.6 10,2.9 12.2,4.6 c 2.4,1.9 5.7,1.9 8.1,0 0.1,0 0.1,0 0.2,0 0,0.1 0.1,0.1 0.1,0.2 z"
+   id="path72"
+   inkscape:connector-curvature="0"
+   style="fill:#4cbf56" />
+
+</symbol>  <g
+     id="layer1"
+     inkscape:label="レイヤー 1"
+     transform="matrix(1.646614,0,0,1.5551497,922.33405,-87.429699)">
+    <path
+       inkscape:export-ydpi="5.2985878"
+       inkscape:export-xdpi="5.2985878"
+       inkscape:connector-curvature="0"
+       id="rect835"
+       d="M 46.805129,83.082761 A 91.403926,90.639021 0 0 0 30.935898,98.726343 V 210.985 a 91.403926,90.639021 0 0 0 15.966495,15.49712 H 158.46643 a 91.403926,90.639021 0 0 0 15.86924,-15.64396 V 98.579883 a 91.403926,90.639021 0 0 0 -15.9665,-15.497122 z"
+       style="opacity:0.9;fill:#ff6600;fill-opacity:0.90196078;stroke:#008000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none" />
+    <text
+       inkscape:export-ydpi="5.2985878"
+       inkscape:export-xdpi="5.2985878"
+       transform="scale(0.77308042,1.2935265)"
+       id="text823"
+       y="158.34268"
+       x="52.569805"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:105.21065521px;line-height:1.25;font-family:'CP Font';-inkscape-font-specification:'CP Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5479722"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:105.21065521px;font-family:'CP Font';-inkscape-font-specification:'CP Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.5479722"
+         y="158.34268"
+         x="52.569805"
+         id="tspan821"
+         sodipodi:role="line">#S</tspan></text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90.83448029px;line-height:1.25;font-family:'CP Font';-inkscape-font-specification:'CP Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:0.81176471;stroke:#ffffff;stroke-width:7.12740755;stroke-miterlimit:4;stroke-dasharray:none"
+     x="93.74987"
+     y="108.40823"
+     id="text909"
+     transform="scale(0.92155987,1.0851167)"><tspan
+       sodipodi:role="line"
+       id="tspan907"
+       x="93.74987"
+       y="108.40823"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90.83448029px;font-family:'CP Font';-inkscape-font-specification:'CP Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;stroke:#ffffff;stroke-width:7.12740755;stroke-miterlimit:4;stroke-dasharray:none">HASH SCRATCH</tspan></text>
+</svg>
