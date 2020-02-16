@@ -5,6 +5,11 @@ If you want to print out the blocks nicely, you should use the SVG format.
 The #S - Hash Scratch is running as Chrome extention, so downloading just one clicked !
 I usually use the Inkscape to create educational materials, and then copy/past to MS-Word, etc.
 
+# Install
+
+Go to Chrome Web Store.
+https://chrome.google.com/webstore/detail/s-hash-scratch/jpefpbkmogghljlfgmpbaokfbdjhadbg
+
 # References
 
 ## Scratchblocks2svg Chrome Extension
