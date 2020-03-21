@@ -1,8 +1,8 @@
 ﻿{
     "name": "#S - Hash Scratch",
     "short_name": "#S",
-    "description": "For Scratch teacher and book creator, downloading Scratch blocks to SVG file.",
-    "version": "3.0.321.2020",
+    "description": "For Scratch teacher and book creator, downloading Scratch blocks to SVG file. Supports MakeCode for micro:bit.",
+    "version": "3.0.322.2020",
     "permissions": [
         "activeTab"
     ],
