@@ -2,7 +2,7 @@
     "name": "#S - Hash Scratch",
     "short_name": "#S",
     "description": "For Scratch teacher and book creator, downloading Scratch blocks to SVG file. Supports MakeCode for micro:bit.",
-    "version": "3.0.322.2020",
+    "version": "3.0.327.2020",
     "permissions": [
         "activeTab"
     ],
@@ -12,7 +12,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://scratch.mit.edu/projects/*", "https://champierre.github.io/scratch3/"],
+            "matches": ["https://scratch.mit.edu/projects/*", "https://champierre.github.io/scratch3/*", "https://machinelearningforkids.co.uk/scratch3/*"],
             "js": ["contentscratcth.js"]
         },
         {
