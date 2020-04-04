@@ -12,7 +12,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://scratch.mit.edu/projects/*", "https://champierre.github.io/scratch3/*", "https://machinelearningforkids.co.uk/scratch3/*"],
+            "matches": ["https://scratch.mit.edu/projects/*", "https://champierre.github.io/scratch3/*", "https://machinelearningforkids.co.uk/scratch3/*", "https://ide.mblock.cc/*"],
             "js": ["contentscratcth.js"]
         },
         {
