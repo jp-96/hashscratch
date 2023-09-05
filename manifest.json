@@ -2,26 +2,35 @@
     "name": "#S - Hash Scratch",
     "short_name": "#S",
     "description": "For Scratch teacher and book creator, downloading Scratch blocks to SVG file. Supports MakeCode for micro:bit.",
-    "version": "3.0.404.2020",
+    "version": "3.1.905.2023",
     "permissions": [
         "activeTab"
     ],
     "background": {
-        "scripts": ["background.js"],
-        "persistent": false
+        "service_worker": "background.js"
     },
     "content_scripts": [
         {
-            "matches": ["https://scratch.mit.edu/projects/*", "https://champierre.github.io/scratch3/*"
-                       , "https://machinelearningforkids.co.uk/scratch3/*", "https://ide.mblock.cc/*"],
-            "js": ["contentscratcth.js"]
+            "matches": [
+                "https://scratch.mit.edu/projects/*",
+                "https://champierre.github.io/scratch3/*",
+                "https://machinelearningforkids.co.uk/scratch3/*",
+                "https://ide.mblock.cc/*"
+            ],
+            "js": [
+                "contentscratcth.js"
+            ]
         },
         {
-            "matches": ["https://makecode.microbit.org/*"],
-            "js": ["contentmicrobit.js"]
+            "matches": [
+                "https://makecode.microbit.org/*"
+            ],
+            "js": [
+                "contentmicrobit.js"
+            ]
         }
     ],
-    "browser_action": {
+    "action": {
         "default_title": "#S - Hash Scratch",
         "default_icon": "images/icon048.png"
     },
@@ -30,6 +39,5 @@
         "48": "images/icon048.png",
         "128": "images/icon128.png"
     },
-    "manifest_version": 2
+    "manifest_version": 3
 }
-  

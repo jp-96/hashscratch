@@ -57,6 +57,16 @@ while (queue.length != 0) {
 }
 ```
 
+## Migrate to Manifest V3
+
+https://developer.chrome.com/docs/extensions/migrating/api-calls/
+
+https://developer.chrome.com/docs/extensions/migrating/api-calls/#replace-browser-page-actions
+
+https://developer.chrome.com/docs/extensions/migrating/api-calls/#replace-the-browseraction-and-pageaction-apis-with-the-action-api
+
+https://developer.chrome.com/docs/extensions/migrating/api-calls/#replace-unsupported-apis
+
 # Giving to ULTIMATE PICTURES
 Donate by purchasing the book at the following URL, if you like.
 https://leanpub.com/hash-scratch
