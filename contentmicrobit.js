@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener(
 )
 
 async function downloadBlockCodeAsSVG(sendMessage) {
-  var svgText = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!-- Hashed with HashScratch for micro:bit v.3.0.905.2023 -->\n`;
+  var svgText = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!-- Hashed with HashScratch for micro:bit v.3.1.905.2023 -->\n`;
   // util - unwrap
   function unwrap(target) {
     while (target.firstChild) {
