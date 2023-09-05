@@ -3,7 +3,7 @@
 // https://ultimate.pictures/
 
 // Requested from backgroud.
-chrome.extension.onMessage.addListener(
+chrome.runtime.onMessage.addListener(
   function(request, sender, sendMessage) {
     downloadBlockCodeAsSVG(sendMessage);
     return true;
@@ -143,7 +143,7 @@ async function downloadBlockCodeAsSVG(sendMessage) {
       }
     }
     // Text
-    svgText = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!-- Hashed with HashScratch -->\n` + computedSvg.outerHTML;
+    svgText = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!-- Hashed with HashScratch v.3.0.905.2023 -->\n` + computedSvg.outerHTML;
     // replace - SPACE (&nbsp;)
     const nbsp = String.fromCodePoint(0xa0);
     svgText = svgText.replace(/&nbsp;/g, nbsp);
