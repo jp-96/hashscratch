@@ -11,13 +11,23 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://scratch.mit.edu/projects/*", "https://champierre.github.io/scratch3/*"
-                       , "https://machinelearningforkids.co.uk/scratch3/*", "https://ide.mblock.cc/*"],
-            "js": ["contentscratcth.js"]
+            "matches": [
+                "https://scratch.mit.edu/projects/*",
+                "https://champierre.github.io/scratch3/*",
+                "https://machinelearningforkids.co.uk/scratch3/*",
+                "https://ide.mblock.cc/*"
+            ],
+            "js": [
+                "contentscratcth.js"
+            ]
         },
         {
-            "matches": ["https://makecode.microbit.org/*"],
-            "js": ["contentmicrobit.js"]
+            "matches": [
+                "https://makecode.microbit.org/*"
+            ],
+            "js": [
+                "contentmicrobit.js"
+            ]
         }
     ],
     "action": {
@@ -31,4 +41,3 @@
     },
     "manifest_version": 3
 }
-  
