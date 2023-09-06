@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener(
 )
 
 async function downloadBlockCodeAsSVG(sendMessage) {
-  var svgText = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!-- Hashed with HashScratch for micro:bit v.3.1.905.2023 -->\n`;
+  var svgText = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!-- Hashed with HashScratch for micro:bit v.3.1.906.2023 -->\n`;
   // util - unwrap
   function unwrap(target) {
     while (target.firstChild) {
@@ -66,6 +66,11 @@ async function downloadBlockCodeAsSVG(sendMessage) {
   for (var i = 0; i < blocklyConnectionIndicator.length; i++) {
     blocklyConnectionIndicator[i].parentNode.removeChild(blocklyConnectionIndicator[i]);
   }
+  // delete - blocklyCursor
+  const blocklyCursor = Array.from(svg.getElementsByClassName('blocklyCursor'));
+  for (var i = 0; i < blocklyCursor.length; i++) {
+    blocklyCursor[i].parentNode.removeChild(blocklyCursor[i]);
+  }
   // unwrap - blocklyWorkspace
   unwrap(svg.getElementsByClassName('blocklyWorkspace')[0]);
   // delete - blocklyBubbleCanvas, blocklyScrollbarBackground, blocklyZoom
@@ -105,6 +110,21 @@ async function downloadBlockCodeAsSVG(sendMessage) {
   for (var i = 0; i < defs.length; i++) {
     defs[i].parentNode.removeChild(defs[i]);
   }
+  // image (data:image/svg+xml;base64,)
+  const images = Array.from(svg.getElementsByTagName('image'));
+  for (let i = 0; i < images.length; i++) {
+    const href = images[i].getAttribute('xlink:href');
+    if (href) {
+      const [contentType, contentValue] = href.split(',', 2);
+      if ('data:image/svg+xml' == contentType) {
+        const base64ContentValue = btoa(decodeURIComponent(contentValue).replace(
+          "viewBox='0 0 24 24'",
+          "viewBox='0 0 24 24' width='24' height='24'"
+        ));
+        images[i].setAttribute('xlink:href', "data:image/svg+xml;base64," + base64ContentValue);
+      }
+    }
+  }
   // compute style
   const divSVG = document.createElement('div');
   document.body.appendChild(divSVG);
@@ -112,24 +132,41 @@ async function downloadBlockCodeAsSVG(sendMessage) {
     divSVG.appendChild(svg);
     const computedSvg = divSVG.firstChild.cloneNode(false);
     const queue = [];
-    queue.push([svg, computedSvg]);
+    queue.push([svg, computedSvg, undefined]);
     while (queue.length != 0) {
-      const pair = queue.pop();
-      const rEle = pair[0];
-      const vEle = pair[1];
+      const [rEle, vEle, parentStyle] = queue.pop();
       const computedStyle = window.getComputedStyle(rEle, '');
       for (let property of computedStyle) {
-        vEle.style[property] = computedStyle.getPropertyValue(property);
+        const parentPropertyValue = parentStyle?.getPropertyValue(property);
+        const propertyValue = computedStyle.getPropertyValue(property);
+        if (parentPropertyValue != propertyValue) {
+          if (('font-family' == property) && ('text' == vEle.tagName)) {
+            // font-family: Consolas
+            vEle.style[property] = '"Consolas", ' + propertyValue;
+          } else if ('rgba(0, 0, 0, 0)' == propertyValue) {
+            // rgba(0, 0, 0, 0) => none
+            vEle.style[property] = 'none';
+          } else {
+            vEle.style[property] = propertyValue;
+          }
+        }
       }
       const rChildren = rEle.children;
       if (rChildren.length !== 0) {
         for (let rChild of rChildren) {
           const vChild = rChild.cloneNode(false);
           vEle.appendChild(vChild);
-          queue.push([rChild, vChild]);
+          queue.push([rChild, vChild, computedStyle]);
         }
       } else {
         vEle.innerHTML = rEle.innerHTML;
+      }
+    }
+    // blocklyEditableText - fill: white
+    for (let v of computedSvg.getElementsByClassName('blocklyEditableText')) {
+      const propertyName = 'fill';
+      if (!v.style[propertyName]) {
+        v.style[propertyName] = 'white';
       }
     }
     // Text
@@ -137,11 +174,6 @@ async function downloadBlockCodeAsSVG(sendMessage) {
     // replace - SPACE (&nbsp;)
     const nbsp = String.fromCodePoint(0xa0);
     svgText = svgText.replace(/&nbsp;/g, nbsp);
-    // replace - font (Arial)
-    const font = '&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;';
-    svgText = svgText.replace(/&quot;Helvetica Neue&quot;, Helvetica, sans-serif;/g, font);
-    // replace - fill: rgba(0, 0, 0, 0);
-    svgText = svgText.replace(/rgba\(0, 0, 0, 0\);/g, 'none;');
   } catch (error) {
     sendMessage({ success: false, reason: error });
     return;
